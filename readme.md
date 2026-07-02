@@ -1,13 +1,19 @@
-Steps:
+# Duck.Mailer
 
-Sign in to your Google Account: https://myaccount.google.com
+### Bulk email sender using Gmail SMTP — send personalized emails with attachments from an Excel sheet
 
-Go to Security.
+## Setup
+1. Enable 2-Step Verification on your Google Account
+2. Generate an App Password at https://myaccount.google.com/apppasswords
+3. Add `EMAIL` and `Key` to `.env`
+4. Edit `email.json` with your subject/message
+5. Fill `example.xlsx` with recipients
 
-Under "Signing in to Google" make sure 2-Step Verification is ON.
+## ToDo
++ add HTML email template support
++ attachment folder batch mode
++ send progress tracking
 
-Click App passwords.
+## Views
 
-Select Mail as the app (or “Other” and name it e.g. emailer-smtp) and generate.
-
-Google gives a 16‑character password (no spaces). That exact string is your Key.
+<img src="https://count.getloli.com/get/@duck.mailer?theme=rule34" />
